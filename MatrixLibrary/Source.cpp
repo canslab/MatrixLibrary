@@ -35,15 +35,18 @@ int main(void)
 	//}
 
 
-	int arr[] = { 1,2,3, 0,1,4, 5,6,0 };
-	Matrix<int> aa(3, 3, arr);
+	//int arr[] = { 1,2,3, 0,1,4, 5,6,0 };
+	//Matrix<int> aa(3, 3, arr);
 
-	aa.Print();
-	//Matrix<double> tt;
-	Matrix<int> testing(3, 3, 0.0);
-	bool bExist = testing.Get3By3InversedMatrix(aa, testing);
+	//aa.Print();
+	////Matrix<double> tt;
+	//Matrix<int> testing(3, 3, 0.0);
+	//bool bExist = testing.Get3By3InversedMatrix(aa, testing);
 
-	std::cout << bExist << "\n\n\n\n";
-	testing.Print();
+	//std::cout << bExist << "\n\n\n\n";
+	//testing.Print();
+	double arr[] = { 1,2,3,4,5,6,7,8,9 };
+	double *brr = nullptr;
+	TransposeMatrix(3, 3, arr, brr);
 	return 0;
 }
